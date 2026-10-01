@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="KASDA Vote — the official home of Kapchorwa Students' Development Association elections. Ciiner Korenyo.">
+  <title>KASDA Vote — Kapchorwa Students' Development Association</title>
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (stored === "dark" || (!stored && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="#top">
+        <img src="assets/kasda-logo.jpg" alt="" width="40" height="40">
+        <span>KASDA Vote</span>
+      </a>
+      <nav class="site-nav__links" id="nav-menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#how">How it works</a>
+        <a href="#election">Election</a>
+        <a class="nav-cta" href="https://cast.kasdavote.com/">Cast ballot</a>
+      </nav>
+      <div class="site-nav__actions">
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle__dark">Dark</span>
+          <span class="theme-toggle__light">Light</span>
+        </button>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/kasda-logo.jpg" alt="KASDA logo">
+        <p class="hero__eyebrow">Kapchorwa Students' Development Association</p>
+        <h1 class="hero__brand">KASDA Vote</h1>
+        <p class="hero__headline">Your voice shapes student leadership.</p>
+        <p class="hero__support">Official election portal of the KASDA Electoral Commission — <em>Ciiner Korenyo</em>.</p>
+        <div class="hero__actions">
+          <a class="btn-kasda" href="https://cast.kasdavote.com/">Cast your ballot</a>
+          <a class="btn-ghost" href="https://cast.kasdavote.com/vote/receipt/">Check a receipt</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section__inner reveal">
+        <p class="section__label">About</p>
+        <h2>Built by students, for students</h2>
+        <p class="section__lead">
+          KASDA brings Kapchorwa students together to grow, lead, and serve.
+          Through free and fair elections we choose leaders who carry the spirit of
+          <strong>Ciiner Korenyo</strong> — our shared call to progress.
+        </p>
+        <div class="about-grid">
+          <article class="glass-card">
+            <h3>Community</h3>
+            <p>A home for government, private, and college students connected by Kapchorwa roots and ambition.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Leadership</h3>
+            <p>From President through ministers and secretaries — every seat is earned by those you elect.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Accountability</h3>
+            <p>The KASDA Electoral Commission stewards a transparent process you can verify with your receipt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="how">
+      <div class="section__inner reveal">
+        <p class="section__label">Process</p>
+        <h2>How voting works</h2>
+        <p class="section__lead">Four quiet steps. One secret ballot. Your choice stays yours.</p>
+        <ol class="steps">
+          <li class="glass-card steps__item">
+            <span class="steps__num">1</span>
+            <h3>Sign in</h3>
+            <p>Enter your student number and email on the casting portal to open the booth.</p>
+          </li>
+          <li class="glass-card steps__item">
+            <span class="steps__num">2</span>
+            <h3>Verify with OTP</h3>
+            <p>Confirm it is you with a one-time code sent to your email — no shared passwords.</p>
+          </li>
+          <li class="glass-card steps__item">
+            <span class="steps__num">3</span>
+            <h3>Cast in private</h3>
+            <p>Mark your ballot for each position. Your selections are secret until you submit.</p>
+          </li>
+          <li class="glass-card steps__item">
+            <span class="steps__num">4</span>
+            <h3>Keep your receipt</h3>
+            <p>Receive a one-time receipt code so you can confirm your vote was recorded.</p>
+          </li>
+        </ol>
+        <div class="section__cta">
+          <a class="btn-kasda" href="https://cast.kasdavote.com/">Enter the voting booth</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="election">
+      <div class="section__inner reveal">
+        <p class="section__label">Upcoming</p>
+        <h2>KASDA Elections 2026</h2>
+        <p class="section__lead">
+          Fifteen leadership offices are on the ballot for <strong>11 October 2026</strong>.
+          Only qualified voters may cast a ballot. Candidate lists will be published by the
+          Electoral Commission — the seats below are the official 2026 ballot.
+        </p>
+        <div class="election-banner glass-card">
+          <p class="election-banner__status">Polling day: 11 October 2026</p>
+          <p>Qualified voters cast at <a href="https://cast.kasdavote.com/">cast.kasdavote.com</a>.</p>
+        </div>
+        <ul class="seats" aria-label="Offices on the 2026 ballot">
+          <li>President</li>
+          <li>Vice President</li>
+          <li>Speaker</li>
+          <li>Vice Speaker</li>
+          <li>General Secretary</li>
+          <li>Finance Minister</li>
+          <li>Education Minister</li>
+          <li>Sports Minister</li>
+          <li>Environmental Minister</li>
+          <li>Disciplinary Minister</li>
+          <li>Secretary for Planning &amp; Development</li>
+          <li>Secretary for Publicity</li>
+          <li>Secretary for Coordination</li>
+          <li>Secretary for Women Affairs</li>
+          <li>Secretary for Students' Affairs</li>
+        </ul>
+        <p class="seats-note">Official offices for KASDA Elections 2026.</p>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="integrity">
+      <div class="section__inner reveal">
+        <p class="section__label">Trust</p>
+        <h2>Integrity you can stand on</h2>
+        <p class="section__lead">Elections work when every member trusts the count. Here is how we protect yours.</p>
+        <div class="trust-grid">
+          <article class="glass-card">
+            <h3>Secret ballot</h3>
+            <p>Your choices are yours alone. Officials see results — not who voted for whom.</p>
+          </article>
+          <article class="glass-card">
+            <h3>One member, one vote</h3>
+            <p>Verified credentials and OTP keep the register honest and the booth fair.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Electoral Commission</h3>
+            <p>The KASDA Electoral Commission runs the process, publishes outcomes, and answers for the count.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__inner reveal">
+        <h2>Ready when the booth opens</h2>
+        <p>Join fellow Kapchorwa students. Lead with your vote.</p>
+        <div class="hero__actions">
+          <a class="btn-kasda" href="https://cast.kasdavote.com/">Cast your ballot</a>
+          <a class="btn-ghost btn-ghost--on-dark" href="https://cast.kasdavote.com/vote/receipt/">Check a receipt</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; <span id="year"></span> KASDA — Ciiner Korenyo</p>
+      <p class="site-footer__links">
+        <a href="https://cast.kasdavote.com/">Voting booth</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://cast.kasdavote.com/management/login/">Election officials</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
