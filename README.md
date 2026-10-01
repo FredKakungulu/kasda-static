@@ -1,22 +1,7 @@
-# KASDA Vote (kasdavote.com)
+# KASDA Vote
 
-Static marketing site for **Kapchorwa Students' Development Association** elections.
+The public site for **kasdavote.com** — home of **Kapchorwa Students' Development Association** elections (*Ciiner Korenyo*).
 
-- **Apex domain:** `kasdavote.com` — this site
-- **Voting app:** `cast.kasdavote.com` — sibling project [`kasda-ovs`](../kasda-ovs)
+It introduces KASDA Vote, explains how voting works, and highlights **KASDA Elections 2026** (polling day **11 October 2026**), including the offices on the ballot. Only qualified voters cast ballots; casting happens on **[cast.kasdavote.com](https://cast.kasdavote.com)**, linked throughout the site.
 
-## Local preview
-
-Open `index.html` in a browser, or serve the folder:
-
-```bash
-npx --yes serve .
-```
-
-## Brand
-
-Visual identity matches KASDA-OVS: Inter, pink `#db2777`, navy `#1e3a8a`, pink→navy hero, pink→blue CTAs.
-
-## Deploy notes
-
-Serve these static files at the apex host. Point casting CTAs at `https://cast.kasdavote.com` (already wired in `index.html`). Configure the OVS app’s `SITE_PUBLIC_URL`, `ALLOWED_HOSTS`, and `CSRF_TRUSTED_ORIGINS` for the cast subdomain separately.
+The KASDA logo is included in `assets/` as `kasda-logo.jpg` and `favicon.jpg`, and appears in the site header and hero.
