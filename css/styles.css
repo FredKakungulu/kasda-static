@@ -477,6 +477,99 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* ——— Feedback form ——— */
+
+.feedback-form {
+  margin-top: 2rem;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.feedback-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.feedback-form__field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.feedback-form__field input,
+.feedback-form__field textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--kasda-navy) 18%, transparent);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-sizing: border-box;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.dark .feedback-form__field input,
+.dark .feedback-form__field textarea {
+  border-color: #334155;
+  background: #020617;
+}
+
+.feedback-form__field input:focus,
+.feedback-form__field textarea:focus {
+  outline: none;
+  border-color: var(--kasda-pink);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--kasda-pink) 25%, transparent);
+}
+
+.feedback-form__field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.feedback-form__submit {
+  align-self: flex-start;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.feedback-form__submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+
+.form-response {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.form-response.is-success {
+  color: #059669;
+}
+
+.dark .form-response.is-success {
+  color: #34d399;
+}
+
+.form-response.is-error {
+  color: #dc2626;
+}
+
+.dark .form-response.is-error {
+  color: #f87171;
+}
+
 /* ——— Steps ——— */
 
 .steps {
